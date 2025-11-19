@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buon Compleanno Mamma – 60 anni di luce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- SPLASH SCREEN -->
+    <div id="splashScreen" class="splash-screen active">
+        <div class="splash-content">
+            <div class="splash-header">
+                <h1 class="splash-title">Buon Compleanno</h1>
+                <p class="splash-name">Mamma</p>
+            </div>
+            
+            <div class="splash-countdown">
+                <div class="splash-countdown-item">
+                    <span class="splash-countdown-number" id="splashDays">00</span>
+                    <span class="splash-countdown-label">Giorni</span>
+                </div>
+                <span class="splash-countdown-separator">:</span>
+                <div class="splash-countdown-item">
+                    <span class="splash-countdown-number" id="splashHours">00</span>
+                    <span class="splash-countdown-label">Ore</span>
+                </div>
+                <span class="splash-countdown-separator">:</span>
+                <div class="splash-countdown-item">
+                    <span class="splash-countdown-number" id="splashMinutes">00</span>
+                    <span class="splash-countdown-label">Minuti</span>
+                </div>
+                <span class="splash-countdown-separator">:</span>
+                <div class="splash-countdown-item">
+                    <span class="splash-countdown-number" id="splashSeconds">00</span>
+                    <span class="splash-countdown-label">Secondi</span>
+                </div>
+            </div>
+
+            <div class="splash-wishes">
+                <p class="splash-wish-text">"60 anni di amore, saggezza e bellezza."</p>
+                <p class="splash-wish-author">Con tutto il nostro affetto</p>
+            </div>
+
+            <button class="splash-button" onclick="closeSplashScreen()">Entra nel sito</button>
+
+            <div class="splash-decorations">
+                <span class="splash-decoration">✨</span>
+                <span class="splash-decoration">💝</span>
+                <span class="splash-decoration">🌸</span>
+                <span class="splash-decoration">✨</span>
+                <span class="splash-decoration">💝</span>
+            </div>
+        </div>
+        <div class="splash-background"></div>
+    </div>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-image-wrapper">
+                <img src="foto/DSC00150.JPG" alt="Ornella" class="hero-image">
+            </div>
+            <h1 class="hero-title">Buon Compleanno Mamma</h1>
+            <p class="hero-subtitle">60 anni di luce</p>
+            <p class="hero-description">Un viaggio tra i tuoi sorrisi, i tuoi ricordi e tutto l'amore che ci hai donato.</p>
+            <button class="btn-primary" onclick="scrollToSection('timeline')">Scopri la sua storia</button>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- COUNTDOWN / CONFETTI -->
+    <div id="countdown-container" class="countdown-container hidden">
+        <div class="countdown">
+            <div class="countdown-item">
+                <span class="countdown-number" id="days">0</span>
+                <span class="countdown-label">Giorni</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="hours">0</span>
+                <span class="countdown-label">Ore</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="minutes">0</span>
+                <span class="countdown-label">Minuti</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="seconds">0</span>
+                <span class="countdown-label">Secondi</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- TIMELINE SECTION -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">La sua storia</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>19 Novembre 1965 – L'inizio</h3>
+                        <p>Nasce Mamma, portando con sé la promessa di una vita piena di amore e gioia.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Anni '70 – L'infanzia</h3>
+                        <p>Giorni spensierati, risate genuine e i primi ricordi che rimangono nel cuore.</p>
+                        <img src="foto/infanzia.jpg" alt="Infanzia" class="timeline-image">
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Anni '80 – Le passioni</h3>
+                        <p>Scopre l'amore per la musica da ballare e la disco music. Ritmo, energia e gioia nel movimento: la sua passione per la danza e la musica diventa parte della sua anima.</p>
+                        <img src="foto/passioni.jpg" alt="Passioni" class="timeline-image">
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Anni '90 – La famiglia</h3>
+                        <p>Arriva l'amore e la famiglia. Con dedizione e rispetto, costruisce legami forti basati sulla presenza costante e l'amore incondizionato. La famiglia diventa il suo tesoro più prezioso.</p>
+                        <img src="foto/famiglia.jpg" alt="Famiglia" class="timeline-image">
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>2004 – La gioia più grande</h3>
+                        <p>Nasce Massimiliano, il suo amore più grande. Un nuovo capitolo di felicità e dedizione.</p>
+                        <img src="foto/DSC00150.JPG" alt="Momento speciale" class="timeline-image">
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>2000-2025 – Una madre straordinaria</h3>
+                        <p>Con amore infinito e dedizione totale, mi hai cresciuto insegnandomi i valori più importanti. Ogni giorno della mia vita è stato illuminato dalla tua presenza, dal tuo supporto e dal tuo amore incondizionato.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Oggi – 60 anni di luce</h3>
+                        <p>Una donna meravigliosa che continua a brillare, ispirare e amare incondizionatamente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Momenti indimenticabili</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="foto/20210828_180457.jpg" alt="Momento 1">
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="foto/DSCN0877.JPG" alt="Momento 2">
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="foto/IMG_20180304_012843_899.jpg" alt="Momento 3">
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="foto/IMG-20210603-WA0054.jpg" alt="Momento 4">
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="foto/IMG-20221212-WA0080.jpg" alt="Momento 5">
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="foto/DSC00150.JPG" alt="Momento 6">
+                    <div class="gallery-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-image" src="" alt="">
+    </div>
+
+    <!-- QUALITIES SECTION -->
+    <section class="qualities-section">
+        <div class="container">
+            <h2 class="section-title">Le cose che amiamo di te</h2>
+            <div class="qualities-grid">
+                <div class="quality-card">
+                    <div class="quality-icon">💝</div>
+                    <h3>Generosità</h3>
+                    <p>Il tuo cuore non conosce limiti nel dare amore e supporto a chi ami.</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-icon">✨</div>
+                    <h3>Eleganza</h3>
+                    <p>Porti grazia e raffinatezza in ogni cosa che fai, con naturale bellezza.</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-icon">🌟</div>
+                    <h3>Saggezza</h3>
+                    <p>I tuoi consigli sono preziosi, frutto di una vita ricca di esperienze.</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-icon">😊</div>
+                    <h3>Gioia</h3>
+                    <p>Il tuo sorriso illumina le giornate di chi ti circonda, sempre.</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-icon">🌸</div>
+                    <h3>Forza</h3>
+                    <p>Affronti la vita con coraggio e determinazione, ispirando tutti noi.</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-icon">❤️</div>
+                    <h3>Amore</h3>
+                    <p>L'amore che dai è incondizionato, profondo e senza fine.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE GAME SECTION -->
+    <section class="game-section">
+        <div class="container">
+            <h2 class="section-title">Gioco interattivo</h2>
+            <div class="game-wrapper">
+                <div class="game-card">
+                    <h3>🎂 Accendi le candele</h3>
+                    <p>Clicca sulle candele per accenderle tutte!</p>
+                    <div class="candles-container" id="candlesContainer">
+                        <!-- Le candele verranno generate da JavaScript -->
+                    </div>
+                    <button class="btn-primary" onclick="resetCandles()">Ricomincia</button>
+                </div>
+                <div class="game-card">
+                    <h3>💝 Scopri i regali</h3>
+                    <p>Clicca sui regali per scoprire i messaggi nascosti!</p>
+                    <div class="gifts-container" id="giftsContainer">
+                        <!-- I regali verranno generati da JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WISHES SECTION -->
+    <section class="wishes-section">
+        <div class="container">
+            <h2 class="section-title">Messaggi di auguri</h2>
+            <div class="wishes-container">
+                <div class="wishes-form">
+                    <h3>Lascia un augurio</h3>
+                    <form id="wishForm">
+                        <input type="text" id="wishName" placeholder="Il tuo nome" required>
+                        <textarea id="wishMessage" placeholder="Il tuo messaggio di auguri..." rows="4" required></textarea>
+                        <button type="submit" class="btn-primary">Invia augurio</button>
+                    </form>
+                </div>
+                <div class="wishes-display">
+                    <h3>Auguri ricevuti</h3>
+                    <div id="wishsList" class="wishes-list">
+                        <div class="wish-card">
+                            <p class="wish-text">"Mamma, sei una donna straordinaria. Auguri per i tuoi 60 anni meravigliosi!"</p>
+                            <p class="wish-author">— Massimiliano</p>
+                        </div>
+                        <div class="wish-card">
+                            <p class="wish-text">"Che questo anno ti porti ancora più felicità, salute e amore. Buon compleanno!"</p>
+                            <p class="wish-author">— La famiglia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEMORY SECTION -->
+    <section class="memory-section">
+        <div class="container">
+            <h2 class="section-title">Ricordi speciali</h2>
+            <div class="memory-grid" id="memoryGrid">
+                <!-- Le carte verranno generate da JavaScript -->
+            </div>
+            <p class="memory-info">Abbina le coppie di ricordi! 🎮</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-message">Con tutto il nostro amore, oggi e sempre.</p>
+            <p class="footer-signature">Da Massimiliano</p>
+            <div class="footer-social">
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
